@@ -1,5 +1,5 @@
 from flask import render_template, request, redirect, url_for
-from greedy.db import Todo
+from taskmaster.db import Todo
 
 def configure_routes(app, db_instance):
     @app.route('/')

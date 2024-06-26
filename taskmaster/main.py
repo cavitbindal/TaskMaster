@@ -1,6 +1,6 @@
 from flask import Flask
-from greedy.routes import configure_routes
-from greedy.db import DB, Todo
+from taskmaster.routes import configure_routes
+from taskmaster.db import DB, Todo
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///db.sqlite'
